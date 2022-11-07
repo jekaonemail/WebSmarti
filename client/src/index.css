@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.OrangeButton{
+  background: rgb(241,213,0);
+  background: linear-gradient(90deg, rgba(241,213,0,1) 0%, rgba(255,174,16,1) 100%);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.65rem;
+  text-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.OrangeButton:hover{
+  background: rgb(241,213,0);
+  background: linear-gradient(-90deg, rgba(241,213,0,1) 0%, rgba(255,174,16,1) 100%);
+}
+
+.PurpleButton{
+  background: rgb(124,70,237);
+  background: linear-gradient(90deg, rgba(124,70,237,1) 0%, rgba(186,16,255,1) 100%);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.65rem;
+  text-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.PurpleButton:hover{
+  background: rgb(124,70,237);
+  background: linear-gradient(-90deg, rgba(124,70,237,1) 0%, rgba(186,16,255,1) 100%);
+}
+
+.BlackButton{
+  background: rgb(71,71,71);
+  background: linear-gradient(90deg, rgba(71,71,71,1) 0%, rgba(27,27,27,1) 100%);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.65rem;
+  text-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.BlackButton:hover{
+  background: rgb(71,71,71);
+  background: linear-gradient(-90deg, rgba(71,71,71,1) 0%, rgba(27,27,27,1) 100%);
+  
+}
+
+
+.swiper {
+}
+
+.swiper-slide {
+  /* left slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: left;
+  -ms-flex-align: left;
+  -webkit-align-items: left;
+}
+
+
+.mySwiperNext{
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  color: #000;
+}
+
+.mySwiperPrev{
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  color: #000;
+}
+
+.accordion {
+  background-color: transparent;
+  color: #000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.9px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.active, .accordion:hover {
+  background-color: rgba(255,255,255,0.7);
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #000;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: rgba(255,255,255,0.7);
+  max-height: 0;
+  overflow: hidden;
+  display: flex;
+  font-size: 0.92rem;
+  font-weight: 400;
+  letter-spacing: 0.9px;
+  color: #333;
+}
+
+.my-popup-overlay {  background: rgba(0, 0, 0, 0.5);}[data-popup='tooltip'].my-popup-overlay {  background: transparent;}
+
+.modal{
+  position: relative;
+}
+
+.closeModal{
+  position: absolute;
+  right: 0; top: -0;
+  background-color: #d11d1d;
+  color :#fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.closeModal:hover{
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  background-color: #f24b4b;
+}
+
+.successLabel{
+  color: green;
+}
+.errorLabel{
+  color: red;
+}
+
+.disable-pagination-button {
+  display: none;
+}
